@@ -153,8 +153,8 @@ ENABLE_VENDOR_RIL_SERVICE := true
 SELINUX_IGNORE_NEVERALLOWS := true
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
 
-# Security patch level
-VENDOR_SECURITY_PATCH := 2021-08-01
+# Vendor Security Patch
+VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 
 # Vintf
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
