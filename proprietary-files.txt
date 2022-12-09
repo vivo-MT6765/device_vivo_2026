@@ -509,32 +509,6 @@ vendor/odm/etc/vintf/manifest_fingerprint.xml
 vendor/odm/etc/vintf/manifest_ssFingerprint.xml
 
 # Firmware
-recovery/ramdisk/system/etc/firmware/wpa_supplicant.conf
-recovery/ramdisk/vendor/firmware/ROMv4_be_patch_1_0_hdr.bin
-recovery/ramdisk/vendor/firmware/soc1_0_patch_mcu_1_1_hdr.bin
-recovery/ramdisk/vendor/firmware/soc1_0_ram_bt_1_1_hdr.bin
-recovery/ramdisk/vendor/firmware/soc1_0_ram_mcu_1_1_hdr.bin
-recovery/ramdisk/vendor/firmware/soc1_0_ram_wifi_1_1_hdr.bin
-recovery/ramdisk/vendor/firmware/touch_firmwares_recovery.bin
-recovery/ramdisk/vendor/firmware/TP-FW-PD2036-LCMID104-VER0x20.bin
-recovery/ramdisk/vendor/firmware/TP-FW-PD2036-LCMID145-VER0x26.bin
-recovery/ramdisk/vendor/firmware/TP-FW-PD2036-LCMID146-VER0x27.bin
-recovery/ramdisk/vendor/firmware/TP-FW-PD2036-LCMID147-VER0x46.bin
-recovery/ramdisk/vendor/firmware/TP-FW-PD2036-LCMID161-VER0x28.bin
-recovery/ramdisk/vendor/firmware/TP-FW-PD2036-LCMID17-VER0x2A.bin
-recovery/ramdisk/vendor/firmware/TP-FW-PD2036-LCMID177-VER0x24.bin
-recovery/ramdisk/vendor/firmware/TP-FW-PD2036-LCMID178-VER0x43.bin
-recovery/ramdisk/vendor/firmware/TP-FW-PD2036-LCMID179-VER0x24.bin
-recovery/ramdisk/vendor/firmware/TP-FW-PD2036-LCMID18-VER0x26.bin
-recovery/ramdisk/vendor/firmware/TP-FW-PD2036-LCMID49-VER0x38.bin
-recovery/ramdisk/vendor/firmware/TP-MP-FW-PD2036-LCMID145-VER0x26.bin
-recovery/ramdisk/vendor/firmware/TP-MP-FW-PD2036-LCMID161-VER0x28.bin
-recovery/ramdisk/vendor/firmware/TP-MP-FW-PD2036-LCMID177-VER0x24.bin
-recovery/ramdisk/vendor/firmware/TP-MP-FW-PD2036-LCMID178-VER0x43.bin
-recovery/ramdisk/vendor/firmware/TP-MP-FW-PD2036-LCMID49-VER0x38.bin
-recovery/ramdisk/vendor/firmware/wifi.cfg
-recovery/ramdisk/vendor/firmware/WIFI_RAM_CODE_soc1_0_1_1.bin
-recovery/ramdisk/vendor/firmware/WMT_SOC.cfg
 vendor/firmware/aw87xxx_pid_39_fm.bin
 vendor/firmware/aw87xxx_pid_39_music.bin
 vendor/firmware/aw87xxx_pid_39_off.bin
@@ -595,8 +569,6 @@ vendor/lib64/hw/gps.default.so
 # GPS-Hardware
 
 # Gatekeeper
-recovery/ramdisk/vendor/lib64/android.hardware.gatekeeper@1.0.so
-recovery/ramdisk/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl.so
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service
 vendor/etc/init/android.hardware.gatekeeper@1.0-service.rc
 vendor/lib/hw/android.hardware.gatekeeper@1.0-impl.so
@@ -607,11 +579,6 @@ vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl.so
 vendor/lib64/hw/gatekeeper.default.so
 vendor/lib64/hw/gatekeeper.k65v1_64_bsp.so
 vendor/lib64/hw/gatekeeper.mt6765.so
-
-# Google
--vendor/app/GoogleNetworkStackResOverlay/GoogleNetworkStackResOverlay.apk
--vendor/app/GoogleTetheringResOverlay/GoogleTetheringResOverlay.apk
--vendor/overlay/NetworkStackGoogleOverlay.apk
 
 # Graphics
 vendor/lib/egl/egl.cfg
@@ -633,7 +600,6 @@ vendor/lib64/hw/vulkan.mt6765.so
 vendor/lib64/libOpenCL.so
 
 # Health
-recovery/ramdisk/vendor/bin/hw/android.hardware.health@2.0-service
 vendor/bin/hw/android.hardware.health@2.1-service
 vendor/etc/init/android.hardware.health@2.1-service.rc
 -vendor/etc/vintf/manifest/android.hardware.health@2.1.xml
@@ -646,10 +612,6 @@ system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
 -system_ext/framework/com.android.hotwordenrollment.common.util.jar
 
 # Keymaster
-recovery/ramdisk/vendor/bin/hw/android.hardware.keymaster@4.0-service.trustonic
-recovery/ramdisk/vendor/lib64/hw/android.hardware.keymaster@3.0-impl.so
-recovery/ramdisk/vendor/lib64/libkeymaster4.so
-recovery/ramdisk/vendor/lib64/vendor.vivo.hardware.wifi.keystore@1.0.so
 vendor/bin/hw/android.hardware.keymaster@4.0-service.trustonic
 vendor/bin/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-service
 vendor/etc/init/android.hardware.keymaster@4.0-service.trustonic.rc
@@ -688,7 +650,6 @@ vendor/lib/libstagefrighthw.so
 vendor/lib64/libstagefrighthw.so
 
 # Mediatek
-recovery/ramdisk/vendor/lib64/libmtk_drvb.so
 vendor/bin/hw/android.hardware.sensors@2.0-service-mediatek
 vendor/bin/hw/android.hardware.usb@1.1-service-mediatekv2
 vendor/bin/hw/android.hardware.vibrator-service.mediatek
@@ -954,7 +915,6 @@ vendor/lib/hw/vibrator.default.so
 vendor/lib64/hw/vibrator.default.so
 
 # Vivo
-recovery/ramdisk/vendor/lib64/vendor.vivo.hardware.wifi.supplicant@1.0.so
 vendor/bin/hw/vendor.factory.hardware.vivoem@1.0-service
 vendor/bin/hw/vendor.vivo.hardware.bbkts@1.0-service
 vendor/bin/hw/vendor.vivo.hardware.capacity_key@1.0-service
@@ -1096,9 +1056,6 @@ vendor/lib64/vendor.vivo.hardware.vdtf@1.0.so
 vendor/lib64/vendor.vivo.hardware.vperf@1.0.so
 vendor/lib64/vendor.vivo.hardware.wifi.hostapd@1.0.so
 vendor/lib64/vendor.vivo.hardware.wifi.supplicant@1.0.so
--vendor/overlay/IconShapeVivoTheme/IconShapeVivoThemeOverlay.apk
--vendor/overlay/VivoFrameworksResRRO.apk
--vendor/overlay/VivoResRRO.apk
 
 # WiFi
 bin/iwpriv
@@ -1109,8 +1066,6 @@ vendor/etc/init/android.hardware.wifi@1.0-service-lazy.rc
 -vendor/etc/vintf/manifest/android.hardware.wifi@1.0-service.xml
 
 # Misc
-system_ext/app/TeeService/lib/arm64/libTeeServiceJni.so
--system_ext/app/TeeService/TeeService.apk
 system_ext/bin/emdlogger1
 system_ext/bin/emdlogger2
 system_ext/bin/emdlogger3
@@ -1211,49 +1166,6 @@ system_ext/lib64/vendor.vivo.hardware.nativecamera.vivodevice@1.0.so
 system_ext/lib64/vendor.vivo.hardware.sectee@1.0.so
 system_ext/lib64/vendor.vivo.hardware.vcode@1.0.so
 system_ext/lib64/vendor.vivo.hardware.vperf@1.0.so
--system_ext/priv-app/CarrierConfig/CarrierConfig.apk
--system_ext/priv-app/DataProtection/DataProtection.apk
--system_ext/priv-app/GoogleFeedback/GoogleFeedback.apk
--system_ext/priv-app/GoogleOneTimeInitializer/GoogleOneTimeInitializer.apk
--system_ext/priv-app/GoogleServicesFramework/GoogleServicesFramework.apk
--system_ext/priv-app/QuickAccessWallet/QuickAccessWallet.apk
--system_ext/priv-app/SetupWizard/SetupWizard.apk
--system_ext/priv-app/WallpaperCropper/WallpaperCropper.apk
-recovery/ramdisk/vendor/app/mcRegistry/020b0000000000000000000000000000.drbin
-recovery/ramdisk/vendor/app/mcRegistry/020b0000000000000000000000000000.tlbin
-recovery/ramdisk/vendor/app/mcRegistry/020f0000000000000000000000000000.drbin
-recovery/ramdisk/vendor/app/mcRegistry/020f0000000000000000000000000000.tlbin
-recovery/ramdisk/vendor/app/mcRegistry/030b0000000000000000000000000000.drbin
-recovery/ramdisk/vendor/app/mcRegistry/030b0000000000000000000000000000.tlbin
-recovery/ramdisk/vendor/app/mcRegistry/04020000000000000000000000000000.drbin
-recovery/ramdisk/vendor/app/mcRegistry/04020000000000000000000000000000.tlbin
-recovery/ramdisk/vendor/app/mcRegistry/05070000000000000000000000000000.drbin
-recovery/ramdisk/vendor/app/mcRegistry/05070000000000000000000000000000.tlbin
-recovery/ramdisk/vendor/app/mcRegistry/05120000000000000000000000000000.drbin
-recovery/ramdisk/vendor/app/mcRegistry/05120000000000000000000000000000.tlbin
-recovery/ramdisk/vendor/app/mcRegistry/06090000000000000000000000000000.drbin
-recovery/ramdisk/vendor/app/mcRegistry/06090000000000000000000000000000.tlbin
-recovery/ramdisk/vendor/app/mcRegistry/0706000000000000000000000000004d.tlbin
-recovery/ramdisk/vendor/app/mcRegistry/07061000000000000000000000000000.tlbin
-recovery/ramdisk/vendor/app/mcRegistry/070f0000000000000000000000000a0a.tlbin
-recovery/ramdisk/vendor/app/mcRegistry/07150000000000000000000000000000.drbin
-recovery/ramdisk/vendor/app/mcRegistry/07150000000000000000000000000000.tlbin
-recovery/ramdisk/vendor/app/mcRegistry/07170000000000000000000000000000.drbin
-recovery/ramdisk/vendor/app/mcRegistry/07170000000000000000000000000000.tlbin
-recovery/ramdisk/vendor/app/mcRegistry/09190000000000000000000000000000.tlbin
-recovery/ramdisk/vendor/app/mcRegistry/15400401000000000000000000000000.tlbin
-recovery/ramdisk/vendor/app/mcRegistry/9073f03a9618383bb1856eb3f990babd.drbin
-recovery/ramdisk/vendor/app/mcRegistry/9073f03a9618383bb1856eb3f990babd.tlbin
-recovery/ramdisk/vendor/bin/android.hardware.gatekeeper@1.0-service
-recovery/ramdisk/vendor/bin/mcDriverDaemon
-recovery/ramdisk/vendor/bin/vndservicemanager
-recovery/ramdisk/vendor/bin/wlan_assistant
-recovery/ramdisk/vendor/bin/wmt_launcher
-recovery/ramdisk/vendor/bin/wmt_loader
-recovery/ramdisk/vendor/bin/wpa_cli
-recovery/ramdisk/vendor/bin/wpa_supplicant
-recovery/ramdisk/vendor/lib64/hw/libMcGatekeeper.so
-recovery/ramdisk/vendor/lib64/libMcClient.so
 -vendor/app/InProcessTetheringResOverlay/InProcessTetheringResOverlay.apk
 vendor/app/mcRegistry/01666900000000000000000000000000.tabin
 vendor/app/mcRegistry/06140000000000000000000000000000.tabin
@@ -1266,7 +1178,6 @@ vendor/app/mcRegistry/98fb95bcb4bf42d26473eae48690d7ea.tabin
 -vendor/app/NetworkStackInProcessResOverlay/NetworkStackInProcessResOverlay.apk
 -vendor/app/NetworkStackResOverlay/NetworkStackResOverlay.apk
 -vendor/app/TetheringResOverlay/TetheringResOverlay.apk
-vendor/bin/applypatch
 vendor/bin/atcid
 vendor/bin/atcid_factory
 vendor/bin/atcid_vendor
@@ -1274,26 +1185,19 @@ vendor/bin/atci_service
 vendor/bin/audiocmdservice_atci
 vendor/bin/autobt
 vendor/bin/bip
-vendor/bin/boringssl_self_test32
-vendor/bin/boringssl_self_test64
 vendor/bin/ccci_fsd
 vendor/bin/ccci_mdinit
 vendor/bin/ccci_rpcd
 vendor/bin/charon
-vendor/bin/chattr
 vendor/bin/dconfig
-vendor/bin/devmem
 vendor/bin/dexecutor
 vendor/bin/dhrystone64_bit.elf
 vendor/bin/doeapp-memtester
 vendor/bin/doeapp-sat
 vendor/bin/dtc_vendor
-vendor/bin/dumpsys
 vendor/bin/epdg_wod
 vendor/bin/f2fs_io
-vendor/bin/fsync
 vendor/bin/fuelgauged_nvram
-vendor/bin/getconf
 vendor/bin/getgameserver
 vendor/bin/gsm0710muxd
 vendor/bin/hw/lcmctl_test
@@ -1302,19 +1206,12 @@ vendor/bin/hw/power_native_test_v_1_0
 vendor/bin/hw/power_native_test_v_1_1
 vendor/bin/hw/vendor.trustonic.tee@1.1-service
 vendor/bin/hw/vtservice_hidl
-vendor/bin/i2cdetect
-vendor/bin/i2cdump
-vendor/bin/i2cget
-vendor/bin/i2cset
-vendor/bin/iconv
-vendor/bin/install
 vendor/bin/ipsec_mon
 vendor/bin/jpegtool
 vendor/bin/lbs_hidl_service
 vendor/bin/lib3a.ccu.dm
 vendor/bin/lib3a.ccu.pm
 vendor/bin/loghidlvendorservice
-vendor/bin/lsattr
 vendor/bin/md_monitor
 vendor/bin/md_monitor_ctrl
 vendor/bin/meta_tst
@@ -1322,14 +1219,9 @@ vendor/bin/mnld
 vendor/bin/mrdump_tool
 vendor/bin/mtk_agpsd
 vendor/bin/muxreport
-vendor/bin/nc
-vendor/bin/netcat
 vendor/bin/netdagent
 vendor/bin/netdc
-vendor/bin/nproc
-vendor/bin/nsenter
 vendor/bin/nvram_daemon
-vendor/bin/readelf
 vendor/bin/richk
 vendor/bin/rttv
 vendor/bin/seedkeeper_client
@@ -1338,12 +1230,8 @@ vendor/bin/SMPTest
 vendor/bin/starter
 vendor/bin/stp_dump3
 vendor/bin/stroke
-vendor/bin/test
 vendor/bin/testgameserver
 vendor/bin/tlcrpmb_gp
-vendor/bin/unlink
-vendor/bin/unshare
-vendor/bin/uuidgen
 vendor/bin/VAFTest
 vendor/bin/volte_imcb
 vendor/bin/volte_imsm_93
@@ -1351,7 +1239,6 @@ vendor/bin/volte_md_status
 vendor/bin/volte_stack
 vendor/bin/volte_ua
 vendor/bin/vts_app
-vendor/bin/watch
 vendor/bin/wfca
 vendor/bin/ww
 vendor/data/misc/ProjectConfig.mk
