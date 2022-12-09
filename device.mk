@@ -33,13 +33,6 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Rootdir
 PRODUCT_PACKAGES += \
-    init.vivo.crashdata.sh \
-    init.vivo.fingerprint.sh \
-    init.vivo.fingerprint_restart_counter.sh \
-    install-recovery.sh \
-    zramsize_reconfig.sh \
-
-PRODUCT_PACKAGES += \
     fstab.enableswap \
     factory_init.connectivity.rc \
     factory_init.project.rc \
