@@ -1,0 +1,12 @@
+[
+	{
+		"repository"	:	"kernel_vivo_2026",
+		"target_path"	:	"kernel_vivo_2026"
+	}
+	{
+		"remote"	:	"github",
+		"repository"	:	"PixelExperience/device_mediatek_sepolicy_vndr",
+		"target_path"	:	"device/mediatek/sepolicy_vndr",
+		"branch"	:	"twelve"
+	}
+]
