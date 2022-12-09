@@ -569,14 +569,8 @@ vendor/lib64/hw/gps.default.so
 # GPS-Hardware
 
 # Gatekeeper
-vendor/bin/hw/android.hardware.gatekeeper@1.0-service
-vendor/etc/init/android.hardware.gatekeeper@1.0-service.rc
-vendor/lib/hw/android.hardware.gatekeeper@1.0-impl.so
-vendor/lib/hw/gatekeeper.default.so
 vendor/lib/hw/gatekeeper.k65v1_64_bsp.so
 vendor/lib/hw/gatekeeper.mt6765.so
-vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl.so
-vendor/lib64/hw/gatekeeper.default.so
 vendor/lib64/hw/gatekeeper.k65v1_64_bsp.so
 vendor/lib64/hw/gatekeeper.mt6765.so
 
