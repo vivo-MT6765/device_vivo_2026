@@ -692,7 +692,6 @@ recovery/ramdisk/vendor/lib64/libmtk_drvb.so
 vendor/bin/hw/android.hardware.sensors@2.0-service-mediatek
 vendor/bin/hw/android.hardware.usb@1.1-service-mediatekv2
 vendor/bin/hw/android.hardware.vibrator-service.mediatek
-vendor/bin/hw/vendor.mediatek.hardware.aee@1.1-service
 vendor/bin/hw/vendor.mediatek.hardware.dplanner@2.0-service
 vendor/bin/hw/vendor.mediatek.hardware.gpu@1.0-service
 vendor/bin/hw/vendor.mediatek.hardware.mms@1.5-service
@@ -702,7 +701,6 @@ vendor/bin/hw/vendor.mediatek.hardware.nvram@1.1-service
 vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service
 vendor/etc/init/android.hardware.sensors@2.0-service-mediatek.rc
 vendor/etc/init/android.hardware.usb@1.1-service-mediatekv2.rc
-vendor/etc/init/vendor.mediatek.hardware.aee@1.1-service.rc
 vendor/etc/init/vendor.mediatek.hardware.dplanner@2.0-service.rc
 vendor/etc/init/vendor.mediatek.hardware.gpu@1.0-service.rc
 vendor/etc/init/vendor.mediatek.hardware.mms@1.5-service.rc
@@ -857,8 +855,6 @@ vendor/lib64/libmtktinyxml.so
 vendor/lib64/libmtkutils.so
 vendor/lib64/libmtk_drvb.so
 vendor/lib64/mtkcam/libmtkcam_streaminfo_plugin-p1stt.so
-vendor/lib64/vendor.mediatek.hardware.aee@1.0.so
-vendor/lib64/vendor.mediatek.hardware.aee@1.1.so
 vendor/lib64/vendor.mediatek.hardware.atci@1.0.so
 vendor/lib64/vendor.mediatek.hardware.dplanner@2.0.so
 vendor/lib64/vendor.mediatek.hardware.gpu@1.0.so
@@ -1117,12 +1113,6 @@ vendor/etc/init/android.hardware.wifi@1.0-service-lazy.rc
 # Misc
 system_ext/app/TeeService/lib/arm64/libTeeServiceJni.so
 -system_ext/app/TeeService/TeeService.apk
-system_ext/bin/aee
-system_ext/bin/aeedb
-system_ext/bin/aee_aed
-system_ext/bin/aee_aed64
-system_ext/bin/aee_core_forwarder
-system_ext/bin/aee_dumpstate
 system_ext/bin/emdlogger1
 system_ext/bin/emdlogger2
 system_ext/bin/emdlogger3
@@ -1130,19 +1120,15 @@ system_ext/bin/emdlogger5
 system_ext/bin/mdlogger
 system_ext/bin/rtt
 system_ext/bin/trace
-system_ext/etc/aee-config
 system_ext/etc/bluetooth/car_brand_json.conf
 system_ext/etc/bluetooth/interop_database.conf
 system_ext/etc/bluetooth/iot_device_list_json.conf
 system_ext/etc/custom.conf
 system_ext/etc/group
-system_ext/etc/init/aee_aed.rc
-system_ext/etc/init/aee_aed64.rc
 system_ext/etc/init/emdlogger1.rc
 system_ext/etc/init/emdlogger2.rc
 system_ext/etc/init/emdlogger3.rc
 system_ext/etc/init/emdlogger5.rc
-system_ext/etc/init/hw/init.aee.rc
 system_ext/etc/init/hw/vendor_init_as_system.rc
 system_ext/etc/init/mdlogger.rc
 system_ext/etc/nr-city.xml
@@ -1165,8 +1151,6 @@ system_ext/lib/libTeeServiceJni.so
 system_ext/lib/libteeservice_client.trustonic.so
 system_ext/lib/libtflite_mtk.mtk.so
 system_ext/lib/libvpuapi.mtk.so
-system_ext/lib/vendor.mediatek.hardware.aee@1.0.so
-system_ext/lib/vendor.mediatek.hardware.aee@1.1.so
 system_ext/lib/vendor.mediatek.hardware.apuware.apusys@1.0.so
 system_ext/lib/vendor.mediatek.hardware.apuware.utils@1.0.so
 system_ext/lib/vendor.mediatek.hardware.apuware.xrp@1.0.so
@@ -1205,8 +1189,6 @@ system_ext/lib64/libTeeServiceJni.so
 system_ext/lib64/libteeservice_client.trustonic.so
 system_ext/lib64/libtflite_mtk.mtk.so
 system_ext/lib64/libvpuapi.mtk.so
-system_ext/lib64/vendor.mediatek.hardware.aee@1.0.so
-system_ext/lib64/vendor.mediatek.hardware.aee@1.1.so
 system_ext/lib64/vendor.mediatek.hardware.apuware.apusys@1.0.so
 system_ext/lib64/vendor.mediatek.hardware.apuware.utils@1.0.so
 system_ext/lib64/vendor.mediatek.hardware.apuware.xrp@1.0.so
@@ -1286,10 +1268,6 @@ vendor/app/mcRegistry/98fb95bcb4bf42d26473eae48690d7ea.tabin
 -vendor/app/NetworkStackInProcessResOverlay/NetworkStackInProcessResOverlay.apk
 -vendor/app/NetworkStackResOverlay/NetworkStackResOverlay.apk
 -vendor/app/TetheringResOverlay/TetheringResOverlay.apk
-vendor/bin/aeev
-vendor/bin/aee_aedv
-vendor/bin/aee_aedv64
-vendor/bin/aee_dumpstatev
 vendor/bin/applypatch
 vendor/bin/atcid
 vendor/bin/atcid_factory
@@ -1381,7 +1359,6 @@ vendor/bin/ww
 vendor/data/misc/ProjectConfig.mk
 vendor/etc/.tp/.ht120.mtc
 vendor/etc/a2dp_in_audio_policy_configuration.xml
-vendor/etc/aee-config
 vendor/etc/analysis_rule.xml
 vendor/etc/apdb/APDB_MT6765_S01__W2047
 vendor/etc/apdb/APDB_MT6765_S01__W2047_ENUM
@@ -1396,8 +1373,6 @@ vendor/etc/ecc_list_OP18.xml
 vendor/etc/ecc_list_OP20.xml
 vendor/etc/ecc_list_preference.xml
 vendor/etc/face_config_pd2036f_ex.xml
-vendor/etc/fstab.enableswap
-vendor/etc/fstab.mt6765
 vendor/etc/fstb.cfg
 vendor/etc/gnss/agps_profiles_conf2.xml
 vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_Mexico.xml
@@ -1413,8 +1388,6 @@ vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_T-Mobile_US.xml
 vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM1.xml
 vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM2.xml
 vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Verizon_Wireless.xml
-vendor/etc/init/aee_aedv.rc
-vendor/etc/init/aee_aedv64.rc
 vendor/etc/init/atcid.rc
 vendor/etc/init/atci_service.rc
 vendor/etc/init/audiocmdservice_atci.rc

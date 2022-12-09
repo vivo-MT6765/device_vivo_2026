@@ -30,3 +30,38 @@ TARGET_SCREEN_WIDTH := 720
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
+
+# Rootdir
+PRODUCT_PACKAGES += \
+    init.vivo.crashdata.sh \
+    init.vivo.fingerprint.sh \
+    init.vivo.fingerprint_restart_counter.sh \
+    install-recovery.sh \
+    zramsize_reconfig.sh \
+
+PRODUCT_PACKAGES += \
+    fstab.enableswap \
+    factory_init.connectivity.rc \
+    factory_init.project.rc \
+    factory_init.rc \
+    init.ago.rc \
+    init.connectivity.rc \
+    init.factory.rc \
+    init.modem.rc \
+    init.mt6765.rc \
+    init.mt6765.usb.rc \
+    init.project.rc \
+    init.sensor_1_0.rc \
+    meta_init.connectivity.rc \
+    meta_init.modem.rc \
+    meta_init.project.rc \
+    meta_init.rc \
+    multi_init.rc \
+    init.recovery.svc.rc \
+    init.recovery.touch.rc \
+    init.recovery.wifi.rc \
+    init.recovery.platform.rc \
+    init.recovery.mt6765.rc \
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/fstab.mt6765:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6765
