@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2022 The LineageOS Project
+# Copyright (C) 2022 The ArrowOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -8,18 +8,15 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common ArrowOS stuff.
+$(call inherit-product, vendor/arrow/config/common.mk)
 TARGET_BOOT_ANIMATION_RES := 720
 
 # Inherit from device makefile
 $(call inherit-product, device/vivo/2026/device.mk)
 
-# Enable debug options for vivo product.
-VIVO_DEBUG := true
-
 PRODUCT_DEVICE := 2026
-PRODUCT_NAME := lineage_2026
+PRODUCT_NAME := arrow_2026
 PRODUCT_BRAND := vivo
 PRODUCT_MODEL := V2026
 PRODUCT_MANUFACTURER := vivo

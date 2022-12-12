@@ -615,42 +615,6 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
-        <name>vendor.vivo.hardware.vcode</name>
-        <version>1.0</version>
-        <interface>
-            <name>IEventTransfer</name>
-            <instance>default</instance>
-        </interface>
-        <interface>
-            <name>IVcode</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="false">
-        <name>vendor.vivo.hardware.vcustom</name>
-        <version>1.0</version>
-        <interface>
-            <name>ICustom</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.vivo.hardware.vdtf</name>
-        <version>1.0</version>
-        <interface>
-            <name>IVdtf</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.vivo.hardware.vperf</name>
-        <version>1.0</version>
-        <interface>
-            <name>IVPerf</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
         <name>vendor.vivo.hardware.wifi.hostapd</name>
         <version>1.0</version>
         <interface>
