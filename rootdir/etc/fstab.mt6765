@@ -6,19 +6,20 @@
 # 1 "<built-in>" 2
 # 1 "vendor/mediatek/proprietary/hardware/fstab/mt6765/fstab.in.mt6765" 2
 # 134 "vendor/mediatek/proprietary/hardware/fstab/mt6765/fstab.in.mt6765"
-/dev/block/platform/bootdevice/by-name/cust /oem ext4 ro wait,,avb,first_stage_mount
+/dev/block/platform/bootdevice/by-name/cust /oem ext4 ro wait,avb,first_stage_mount
 
-/dev/block/platform/bootdevice/by-name/vgc /vgc ext4 ro wait,,avb,first_stage_mount
-
-
+/dev/block/platform/bootdevice/by-name/vgc /vgc ext4 ro wait,avb,first_stage_mount
 
 
-system /system ext4 ro wait,avb=vbmeta_system,logical,first_stage_mount,avb_keys=/avb/q-gsi.avbpubkey:/avb/r-gsi.avbpubkey:/avb/s-gsi.avbpubkey,
-
-vendor /vendor ext4 ro wait,logical,first_stage_mount,
 
 
-product /product ext4 ro wait,avb,logical,first_stage_mount,
+system /system ext4 ro wait,avb=vbmeta_system,logical,first_stage_mount,avb_keys=/avb/q-gsi.avbpubkey:/avb/r-gsi.avbpubkey:/avb/s-gsi.avbpubkey
+
+system_ext /system_ext ext4 ro wait,logical,first_stage_mount
+
+vendor /vendor ext4 ro wait,logical,first_stage_mount
+
+product /product ext4 ro wait,avb,logical,first_stage_mount
 # 165 "vendor/mediatek/proprietary/hardware/fstab/mt6765/fstab.in.mt6765"
 /dev/block/platform/bootdevice/by-name/metadata /metadata ext4 noatime,nosuid,nodev,discard wait,check,formattable,first_stage_mount
 
